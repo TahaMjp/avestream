@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Slide from "./Slide";
 import Footer from "./Footer";
 import ScrollButton from "../UI/ScrollButton";
+import Header from "../UI/Header"; // import the header
 
 // import images directly
 import photo1 from "../../images/vertical/photo-1.jpg";
@@ -50,11 +51,15 @@ const Home = () => {
       id="scroll-container"
       className="h-screen snap-y snap-mandatory overflow-scroll scroll-smooth relative"
     >
+      {/* Sticky Header */}
+      <Header containerRef={containerRef} />
+
       {slides.map((slide) => (
         <Slide key={slide.id} bg={slide.image} route={slide.route}>
           <div className="text-3xl font-bold text-white">{slide.text}</div>
         </Slide>
       ))}
+
       <Footer />
 
       {/* ScrollButton fixed at bottom center */}
