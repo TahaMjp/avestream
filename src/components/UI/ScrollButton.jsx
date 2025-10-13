@@ -1,3 +1,10 @@
+/**
+ * ScrollButton.jsx
+ * — Floating scroll button at bottom center.
+ * — Scrolls to next slide or back to top (if at footer).
+ * — Dark Luxe styling: glass blur + soft hover scale.
+ */
+
 import { useEffect, useState } from "react";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
@@ -8,6 +15,8 @@ const ScrollButton = ({ containerRef }) => {
     if (!containerRef.current) return;
 
     const footer = containerRef.current.querySelector("footer");
+
+    // Observe footer visibility to know when user reached the bottom
     const observer = new IntersectionObserver(
       ([entry]) => setAtBottom(entry.isIntersecting),
       { threshold: 0.5 }
@@ -21,8 +30,10 @@ const ScrollButton = ({ containerRef }) => {
     if (!containerRef.current) return;
 
     if (atBottom) {
+      // Scroll smoothly back to top
       containerRef.current.scrollTo({ top: 0, behavior: "smooth" });
     } else {
+      // Scroll to next section
       const sections = Array.from(
         containerRef.current.querySelectorAll("section, footer")
       );
@@ -41,13 +52,10 @@ const ScrollButton = ({ containerRef }) => {
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
       <button
         onClick={handleClick}
-        className="p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/40 text-black transition-all duration-300 ease-in-out hover:scale-110"
+        className="p-3 rounded-full bg-[#758467]/30 backdrop-blur-md hover:bg-[#758467]/60 text-white transition-all duration-300 ease-in-out hover:scale-110"
+        aria-label={atBottom ? "Scroll to top" : "Scroll down"}
       >
-        {/* Fade effect on icon change */}
-        <span
-          key={atBottom ? "up" : "down"}
-          className="transition-opacity duration-300 ease-in-out"
-        >
+        <span key={atBottom ? "up" : "down"}>
           {atBottom ? (
             <HiChevronUp className="text-2xl" />
           ) : (
