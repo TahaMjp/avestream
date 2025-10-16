@@ -1,38 +1,38 @@
-@import "tailwindcss";
+    @import "tailwindcss";
+    /* scrollbar.css */
+    /* Hide vertical scrollbar across browsers */
 
-/* scrollbar.css */
-
-
-/* Hide vertical scrollbar across browsers */
-
-#scroll-container {
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* IE 10+ */
-}
-
-
-/* Chrome, Edge, Safari */
-
-#scroll-container::-webkit-scrollbar {
-    display: none;
-}
-
-
-/* Fade-in animation used by slides/text */
-
-.fade-in {
-    animation: fadeIn 1.2s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    #scroll-container {
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE 10+ */
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    /* Chrome, Edge, Safari */
+
+    #scroll-container::-webkit-scrollbar {
+        display: none;
     }
-}
+
+    /* Fade-in animation used by slides/text */
+
+    .fade-in {
+        animation: fadeIn 1.2s ease-in-out forwards;
+    }
+
+    @font-face {
+        font-family: eraser;
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+        src: url("../fonts/EraserRegular.ttf");
+    }
+
+    @font-face {
+        font-family: malvides;
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+        src: url("../fonts/Malvides.otf");
+    }
