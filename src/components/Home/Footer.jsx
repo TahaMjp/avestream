@@ -1,6 +1,6 @@
 /**
  * Footer.jsx — AVESTREAM footer (modular with FillerText component)
- * — Adjusted spacing for overlapping filler texts (desktop only).
+ * — Fixed untouchable links issue by adjusting z-index and pointer events.
  */
 
 import photo5 from "../../images/photo_6_2025-10-21_08-03-24.jpg";
@@ -18,17 +18,17 @@ const Footer = () => {
       }}
     >
       {/* === LIGHT MOBILE OVERLAY for better visibility === */}
-      <div className="absolute inset-0 bg-black/30 md:bg-black/10 z-0" />
+      <div className="absolute inset-0 bg-black/30 md:bg-black/10 z-0 pointer-events-none" />
 
       {/* === MAIN TITLE === */}
-      <h1 className="absolute top-[9%] left-1/2 -translate-x-1/2 text-[13vw] md:text-8xl font-extrabold uppercase tracking-tighter font-[eraser] drop-shadow-[2px_2px_5px_rgba(0,0,0,0.4)] rotate-[-3deg] z-10 text-[#F3EDE4]">
-        <a href="/" className="no-underline text-[#F3EDE4]">
+      <h1 className="absolute top-[9%] left-1/2 -translate-x-1/2 text-[13vw] md:text-8xl font-extrabold uppercase tracking-tighter font-[eraser] drop-shadow-[2px_2px_5px_rgba(0,0,0,0.4)] rotate-[-3deg] z-[900] text-[#F3EDE4]">
+        <a href="/" className="no-underline text-[#F3EDE4] pointer-events-auto">
           AVESTREAM
         </a>
       </h1>
 
       {/* === CREATOR LINKS === */}
-      <div className="absolute w-10/12 top-[22%] left-1/2 -translate-x-1/2 flex gap-5 md:gap-8 text-[4vw] md:text-xl tracking-widest uppercase z-10 font-[eraser] justify-center text-[#F3EDE4]">
+      <div className="absolute w-10/12 top-[22%] left-1/2 -translate-x-1/2 flex gap-5 md:gap-8 text-[4vw] md:text-xl tracking-widest uppercase z-[999] font-[eraser] justify-center text-[#F3EDE4] pointer-events-auto">
         <a
           href="https://instagram.com/tahamajlesi"
           target="_blank"
@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
 
       {/* === CHAOTIC FILLER TEXTS === */}
-      <div className="absolute inset-0 flex items-center justify-center z-10 font-[eraser] text-[#F3EDE4]">
+      <div className="absolute inset-0 flex items-center justify-center z-10 font-[eraser] text-[#F3EDE4] pointer-events-none">
         <div className="relative w-full h-full md:space-y-[3vw]">
           <FillerText
             text="crafted in berlin"
@@ -186,7 +186,7 @@ const Footer = () => {
       </div>
 
       {/* === COPYRIGHT === */}
-      <div className="absolute bottom-4 w-full text-center z-20 text-[#F3EDE4]">
+      <div className="absolute bottom-4 w-full text-center z-[900] text-[#F3EDE4] pointer-events-none">
         <p className="text-[10px] md:text-sm tracking-widest uppercase opacity-70">
           © 2025 AVESTREAM — all rights reserved
         </p>

@@ -197,6 +197,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-auto {
+    pointer-events: auto;
+  }
   .pointer-events-none {
     pointer-events: none;
   }
@@ -358,6 +361,12 @@
   }
   .z-50 {
     z-index: 50;
+  }
+  .z-\[900\] {
+    z-index: 900;
+  }
+  .z-\[999\] {
+    z-index: 999;
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
