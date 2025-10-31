@@ -7,7 +7,7 @@ import ScrollButton from "../UI/ScrollButton";
 import photo1 from "../../images/photo_1_2025-10-21_08-03-24.jpg";
 import photo2 from "../../images/photo_2_2025-10-21_08-03-24.jpg";
 import photo3 from "../../images/photo_3_2025-10-21_08-03-24.jpg";
-import photo5 from "../../images/photo_5_2025-10-21_08-03-24.jpg";
+import photo4 from "../../images/photo_5_2025-10-21_08-03-24.jpg";
 
 // -------- Slides --------
 const slides = [
@@ -41,7 +41,7 @@ const slides = [
   {
     id: "3",
     route: "/look",
-    image: photo5,
+    image: photo4,
     title: "BUILT FOR THE DEFIANT",
     fillers: [
       "For those who never ask permission.",
