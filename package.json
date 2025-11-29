@@ -1,6 +1,7 @@
 {
   "name": "avestream",
   "version": "0.1.0",
+  "homepage": "https://TahaMjp.github.io/avestream",
   "private": true,
   "dependencies": {
     "@tailwindcss/cli": "^4.1.14",
@@ -42,8 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
