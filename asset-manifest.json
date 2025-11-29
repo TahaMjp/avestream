@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c60aacd.css",
+    "main.js": "/static/js/main.d825da2f.js",
+    "static/media/photo_3_2025-10-21_08-03-24.jpg": "/static/media/photo_3_2025-10-21_08-03-24.0cfb62427bcbb815a635.jpg",
+    "static/media/photo_6_2025-10-21_08-03-24.jpg": "/static/media/photo_6_2025-10-21_08-03-24.e9a48ac888ed8dc8df55.jpg",
+    "static/media/photo_5_2025-10-21_08-03-24.jpg": "/static/media/photo_5_2025-10-21_08-03-24.20d47cbd7bc24027f101.jpg",
+    "static/media/EraserRegular.ttf": "/static/media/EraserRegular.3f8aecef660ae811b2bc.ttf",
+    "static/media/photo_2_2025-10-21_08-03-24.jpg": "/static/media/photo_2_2025-10-21_08-03-24.9088ba9e69be3101f38e.jpg",
+    "static/media/photo_1_2025-10-21_08-03-24.jpg": "/static/media/photo_1_2025-10-21_08-03-24.5a17c78f4fcee7d716f4.jpg",
+    "static/media/Malvides.otf": "/static/media/Malvides.d7e9c8256d517e501f52.otf",
+    "index.html": "/index.html",
+    "main.1c60aacd.css.map": "/static/css/main.1c60aacd.css.map",
+    "main.d825da2f.js.map": "/static/js/main.d825da2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c60aacd.css",
+    "static/js/main.d825da2f.js"
+  ]
+}
