@@ -7,9 +7,7 @@ const App = () => {
     <Router>
       <Wrapper>
         <Routes>
-          {/* main landing page (first slide) */}
           <Route path="/" element={<Home currentSlide="1" />} />
-          {/* other slides with their own URLs */}
           <Route path="/about" element={<Home currentSlide="2" />} />
           <Route path="/look" element={<Home currentSlide="3" />} />
           <Route path="/story" element={<Home currentSlide="4" />} />
