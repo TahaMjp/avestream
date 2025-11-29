@@ -8,12 +8,12 @@ const App = () => {
       <Wrapper>
         <Routes>
           {/* main landing page (first slide) */}
-          <Route path="/" element={<Home currentSlide="1" />} />
+          <Route path="avestream/" element={<Home currentSlide="1" />} />
           {/* other slides with their own URLs */}
-          <Route path="/about" element={<Home currentSlide="2" />} />
-          <Route path="/look" element={<Home currentSlide="3" />} />
-          <Route path="/story" element={<Home currentSlide="4" />} />
-          <Route path="/contact" element={<Home currentSlide="5" />} />
+          <Route path="avestream/about" element={<Home currentSlide="2" />} />
+          <Route path="avestream/look" element={<Home currentSlide="3" />} />
+          <Route path="avestream/story" element={<Home currentSlide="4" />} />
+          <Route path="avestream/contact" element={<Home currentSlide="5" />} />
         </Routes>
       </Wrapper>
     </Router>
